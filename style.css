@@ -45,9 +45,20 @@ input {
 }
 
 .header{
-    margin: 40px 20px 0px;
+    margin: 0 20px;
     font-size: 0;
+    height: 15%;
+    line-height: 45px;
+    font-family: sans-serif;
+    font-size: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+    padding-bottom: 15px;
 }
+
 
 .header li{
     display: inline;
@@ -77,6 +88,16 @@ input {
     text-align: right;
 }
 
+button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+}
+
 .actions button {
     color: white;
     background-color: #67b54b;
@@ -86,4 +107,71 @@ input {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
+}
+
+figure {
+    margin-top: 32px;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.promo {
+    display: flex;
+    max-width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.explanatory-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+p {
+    color: #8b8b8bcc;
+    margin-top: 15px;
+}
+
+.promo .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.promo .explanatory-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.publish{
+    padding-left: 10px;
 }
