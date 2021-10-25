@@ -1,0 +1,36 @@
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$dada: #dadada;
+$super-bold: 900;
+$gray: #4a4a4a;
+$light-gray: #979797;
+$light-green: #67b54b;
+
+$font-title:'Alegreya',serif ;
+
+//features
+$features-grid-template:repeat(2, 1fr) / repeat(2, 1fr);
+$feat-co-h3:#343434;
+$feat-co-p:#7e7e7e;
+$feat-16:1rem;
+$feat-font-we:400;
+
+%feat-card{
+    background-color: $white;
+    margin: 0 15px 30px;
+    border: 1px solid $dada;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+//Fuentes
+%base-title{
+    font-family: $font-title;
+    color: $dark-green-text;
+    font-weight: $super-bold;   
+}
+

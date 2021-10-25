@@ -1,0 +1,159 @@
+@use 'global' as *;
+@use 'features' as *;
+
+
+//general
+.features {
+    display: grid;
+    grid-template: $features-grid-template;
+    height: 800px;
+    background-color: $dark-green-title;
+    padding: 5% 10%;
+    .feature-card{
+        @extend %feat-card;
+    }
+
+    .feature-content{
+         flex: 2;
+         margin-bottom: 1rem;
+         margin-top: 0;
+         figure{
+            margin-left: 0; 
+         }
+         img{
+            width: 50px; 
+         }
+         h3{
+            font-size: 24px; 
+            color: $feat-co-h3; 
+            font-weight: 400;
+         }
+         p{
+            font-size: $feat-16;
+            color: $feat-co-p;
+            font-weight: $feat-font-we;
+         }
+         a{
+            font-size: $feat-16;
+            color: $light-green;
+            font-weight: $feat-font-we;
+            text-decoration: none;
+         }
+    }
+    .feature-image{
+        flex: 1;
+        width: 40%;
+        height: 80%;
+        position: relative;
+        right: -50px;
+        transition: right 0.5s;
+        :hover{
+            right: 0;
+            right: -20px;
+        }
+        figure, img{
+            height: 100%;
+            margin-top: 0;
+        }
+    }
+
+}
+
+.blog{
+    background-color: $white;
+    max-width: unset !important;
+    padding: 5% 20%;
+    .title{
+        @extend %base-title;
+    }
+
+    .process-list{
+        margin: 40px 0 36px;
+
+        .process{
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            & >div{
+                &>h3{
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500px;
+                }
+                & > p{
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+             .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                align-items: center;
+                img {
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+
+    .card-title{
+        font-size: 24px;
+        color: $gray;
+        font-weight: 400;
+    }
+
+    .metadata{
+        .category{
+            color: $light-gray;
+        }
+    }
+
+    .read-time{
+        color: $light-gray;
+    }
+
+    .card-text{
+        color: $gray;
+        font-size: 18px;
+        line-height: 1.5em;
+        min-height: 6em;
+        .read-more {
+            a {
+              text-decoration: underline;
+            }
+        }
+    }
+
+    .autor{
+        display: flex;
+        align-items: center
+
+        img {
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+          }
+
+          p {
+            margin: 0 15px 0;
+            font-weight: 700;
+          }
+    }
+
+    button{
+        height: auto;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+        background-color: $dark-green-title;
+        color: $white;
+        border: 0;
+
+    }
+}
